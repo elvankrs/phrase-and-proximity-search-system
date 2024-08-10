@@ -18,9 +18,9 @@ Each news article is treated as an individual document, and an inverted index is
 
 A query processor is implemented for handling two types of queries:
 
-Phrase Queries: Queries where a specific sequence of words must appear in the same order within the text. For example, a phrase query is expressed as `w1 w2 ... wn` where `w1, w2, ..., wn` are single-word keywords.  
+- **Phrase Query:** A query where a specific sequence of words must appear in the same order within the text. For example, a phrase query is expressed as `w1 w2 ... wn` where `w1, w2, ..., wn` are single-word keywords.  
 
-Proximity Queries: Queries where two words must appear within a certain number of words of each other, regardless of order. For example, a proximity query is expressed as `w1 k w2`, where `k` is the maximum number of words allowed between `w1` and `w2`.  
+- **Proximity Query:** A query where two words must appear within a certain number of words of each other, regardless of order. For example, a proximity query is expressed as `w1 k w2`, where `k` is the maximum number of words allowed between `w1` and `w2`.  
 
 The query processor searches the inverted index to identify and return the IDs of documents that match the query criteria, presenting the results in ascending order.
 
